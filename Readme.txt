@@ -1,4 +1,4 @@
-=== WooCommerce Smart Export ===
+=== Woocommerce Smart Export ===
 Contributors: themology
 Donate link: http://themology.net/donate
 Tags: woocommerce, export, wooCommerce export, csv export, orders export, customer export, product export, schudle export, wordpress export
@@ -42,7 +42,7 @@ All our plugins and themes are developer friendly and translation ready. We alwa
 
 To Read User Manual Follow this <a href="http://docs.themolog.net/woocomerce-smart-export">link.</a>
 
-=If You like this Plugin, please rate with 5 Star, and If you need any assist, dont forget to contact with us.=
+**If You like this Plugin, please rate with 5 Star, and If you need any assist, dont forget to contact with us.**
 
 == Installation ==
 
