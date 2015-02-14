@@ -29,7 +29,7 @@ Just another handy tools for Woocommerce from <a href="http://themology.net">The
 
 This plugin is fully translatebale, if you want to help us by translating it in our own language, then you are most welcome.
 
-ALlread translated:
+Already translated:
 
 * English
 * France
