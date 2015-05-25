@@ -86,7 +86,7 @@ Two options :
 
 Just add this line to your wp_config.php file (replace 1024M by any value you want) :
 
-`define( 'WP_MAX_MEMORY_LIMIT', '1024M' );`
+define( 'WP_MAX_MEMORY_LIMIT', '1024M' );
 
 2. Reduce the number of orders to export by filtering by date.
 
@@ -131,6 +131,8 @@ It’s possible to order some fields, but not all.
 
 Those can be ordered therebetween :
 
+<code>
+
 //general ‘id’, ‘status’, ‘order_date’,
 
 //billing infos ‘billing_first_name’, ‘billing_last_name’, ‘billing_company’, ‘billing_address_1’, ‘billing_address_2’,’billing_city’, ‘billing_postcode’, ‘billing_country’, ‘billing_state’, ‘billing_email’, ‘billing_phone’,
@@ -140,16 +142,18 @@ Those can be ordered therebetween :
 //note ‘customer_note’,
 
 //payment, shipping and total ‘shipping_method_title’, ‘payment_method_title’, ‘order_discount’, ‘cart_discount’, ‘order_tax’, ‘order_shipping’, ‘order_shipping_tax’, ‘order_total’, ‘order_tax_detail’, ‘completed_date’,
+</code>
 
 But after this columns, you have those data that can’t be reordered :
 
+<code>
 //others ‘number_of_different_items’, ‘total_number_of_items’,
-
-Products informations
-
-‘used_coupons’, ‘coupon_name’, ‘coupon_discount’
+</code>
 
 Products informations :
+
+<code>‘used_coupons’, ‘coupon_name’, ‘coupon_discount’</code>
+
 
 Standard data that can be reordered therebetween :
 
@@ -194,7 +198,7 @@ You can rename the columns using a filter (small piece of code to put into your 
 * WC 2.2 : correct display of the order status
 
 
-== Arbitrary section ==
+== Documentation ==
 
 = Exporting Customers options =
 
@@ -204,23 +208,27 @@ There are four pre-configured sets of data when exporting customers. You need to
 
 User identity will extract the following fields :
 
-\`user_registered, user_login, user_email\`
+<code>user_registered, user_login, user_email</code>
 
 Billing informations will extract the following fields :
 
-\`billing_first_name, billing_last_name, billing_company, billing_address_1,
+<code>
+billing_first_name, billing_last_name, billing_company, billing_address_1,
 billing_address_2, billing_city, billing_postcode, billing_country,
-billing_state, billing_email, billing_phone\`
+billing_state, billing_email, billing_phone
+</code>
 
 Shipping informations will extract the following fields :
 
-\`shipping_first_name, shipping_last_name, shipping_company, shipping_address_1,
+<code>
+shipping_first_name, shipping_last_name, shipping_company, shipping_address_1,
 shipping_address_2, shipping_city, shipping_postcode, shipping_country,
-shipping_state\`
+shipping_state
+</code>
 
 Sales statistics will compute and add to your csv file the following columns :
 
-\`nb_order*, amount_total**\`
+<code>nb_order*, amount_total**</code>
 
 *nb_order is total number of completed orders made by the customer.
 **amount_total sums each completed orders made by the customer.
@@ -240,23 +248,27 @@ There are four pre-configured sets of data when exporting customers. You need to
 
 1. User identity will extract the following fields :
 
-\`user_registered, user_login, user_email\`
+<code>user_registered, user_login, user_email</code>
 
 2. Billing informations will extract the following fields :
 
-\`billing_first_name, billing_last_name, billing_company, billing_address_1,
+<code>
+billing_first_name, billing_last_name, billing_company, billing_address_1,
 billing_address_2, billing_city, billing_postcode, billing_country,
-billing_state, billing_email, billing_phone\`
+billing_state, billing_email, billing_phone
+</code>
 
 3. Shipping informations will extract the following fields :
 
-\`shipping_first_name, shipping_last_name, shipping_company, shipping_address_1,
+<code>
+shipping_first_name, shipping_last_name, shipping_company, shipping_address_1,
 shipping_address_2, shipping_city, shipping_postcode, shipping_country,
-shipping_state\`
+shipping_state
+</code>
 
 4. Sales statistics will compute and add to your csv file the following columns :
 
-\`nb_order*, amount_total**\`
+<code>nb_order*, amount_total**</code>
 
 *nb_order is total number of completed orders made by the customer.
 **amount_total sums each completed orders made by the customer.
@@ -278,7 +290,7 @@ You may choose if the products will be displayed on line or on column. If you ch
 
 Almost every fields from each order will be available in the CSV files :
 
-\`
+<code>
 			//general
 			'id', 'status', 'order_date',
 			
@@ -307,8 +319,8 @@ Almost every fields from each order will be available in the CSV files :
 			'used_coupons',
 			'coupon_name',
 			'coupon_discount'
-\`
 
+</code>
 
 * **Date range**
 
@@ -381,7 +393,8 @@ When the plugin is deactivated, all the cron are removed.
 = Usage =
 
 **Adding a custom field to the orders export (field added by a plugin for instance) :**
-\`
+
+<code>
 // functions.php
 
 function wcse_included_order_keys_filter_custom($keys){
@@ -392,13 +405,13 @@ function wcse_included_order_keys_filter_custom($keys){
 }
 
 add_filter( 'wwcse_included_order_keys_filter', 'wcse_included_order_keys_filter_custom' );
-\`
+</code>
 
 
 **Removing billing_company from the customer export files.**
 
-\`
-/ functions.php
+<code>
+// functions.php
 
 function wcse_included_billing_information_keys_filter_custom($keys){
 	
@@ -408,13 +421,13 @@ function wcse_included_billing_information_keys_filter_custom($keys){
 }
 
 add_filter( 'wcse_included_billing_information_keys_filter', 'wcse_included_billing_information_keys_filter_custom' );
-\`
+</code>
 
 
 **Adding a product post meta to the order export. (In this exemple, add the dimensions information)**
 
-\`
-/ functions.php
+<code>
+// functions.php
 
 function custom_product_meta($array)
 {
@@ -425,12 +438,12 @@ function custom_product_meta($array)
 	return $array;
 }
 add_filter('wcse_included_order_product_keys_filter', 'custom_product_meta');
-\`
+</code>
 
 
 **Default product data : keep just name and quantity**
 
-\`
+<code>
 // functions.php
 
 function my_order_default_product_keys_filter($key)
@@ -438,12 +451,12 @@ function my_order_default_product_keys_filter($key)
 	return array('name', 'quantity');
 }
 add_filter('wcse_included_order_default_product_keys_filter', 'my_order_default_product_keys_filter');
-\`
+</code>
 
 
 **Adding a column with fistname and lastname in the same column.**
 
-\`
+<code>
 // functions.php
 
 function add_complete_name($keys){
@@ -453,14 +466,14 @@ function add_complete_name($keys){
 }
 
 add_filter( 'wcse_included_order_keys_filter', 'add_complete_name' );
-\`
+</code>
 
 
 **Adding a custom time interval**
 
 (See http://codex.wordpress.org/Plugin_API/Filter_Reference/cron_schedules)
 
-\`
+<code>
 // functions.php
 
 function my_add_weekly( $schedules ) {
@@ -472,4 +485,4 @@ function my_add_weekly( $schedules ) {
 	return $schedules;
 }
 add_filter( 'cron_schedules', 'my_add_weekly' );
-\`
+</code>
