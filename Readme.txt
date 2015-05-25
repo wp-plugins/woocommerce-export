@@ -3,7 +3,7 @@ Contributors: themology
 Donate link: http://themology.net/donate
 Tags: woocommerce, export, wooCommerce export, csv export, orders export, customer export, product export, schudle export, wordpress export
 Requires at least: 3.7
-Tested up to: 4.1
+Tested up to: 4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
