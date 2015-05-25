@@ -86,7 +86,7 @@ Two options :
 
 Just add this line to your wp_config.php file (replace 1024M by any value you want) :
 
-\`define( 'WP_MAX_MEMORY_LIMIT', '1024M' );\`
+`define( 'WP_MAX_MEMORY_LIMIT', '1024M' );`
 
 2. Reduce the number of orders to export by filtering by date.
 
