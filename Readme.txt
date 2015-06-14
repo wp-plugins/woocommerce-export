@@ -16,8 +16,6 @@ WooCommerce Smart Export Plugin gives you the ability to export into CSV file al
 This plugin takes advantage of the new "Date Query" introduced with WordPress version 3.7, To use this with your Woocommerce store, make sure your installed WordPress version 3.7+
 
 
-Just another handy tools for Woocommerce from <a href="http://themology.net">Themology</a> Team.
-
 **Some Features**
 
 * Great tool to analyse store activity.
@@ -28,18 +26,28 @@ Just another handy tools for Woocommerce from <a href="http://themology.net">The
 * Schedule Imports
 * and more.
 
-**Language File**
 
-This plugin is fully translatebale, if you want to help us by translating it in our own language, then you are most welcome.
+= Get the Pro Version =
 
-Already translated:
+By using our Pro version, You can also import WooCommerce products from any CSV file. It supports importing hundreds or thousands of products at once. It uses ajax function for import. You can imports images via URL or local file path and imports hierarchical category structures.
 
-* English
-* France
-* China
-* Taiwan
+**Pro Version Feature:**
 
-**If You like this Plugin, please rate with 5 Star, and If you need any assist, dont forget to contact with us.**
+* Quick, Easy & Essential Export-Import System
+* Export Data to CSV File
+* Import Data from CSV File
+* Ajax Product Import System
+* Product Export Archive & Archive Management
+* Import Product Image by URL
+* Export Product with All Meta
+* Export All Product OR from Desired Category
+* Set Featured Image
+* Import Categories and Tags
+* Import entire hierarchical (parent/child) Category structures
+* Add Categories and Tags to Products by Category/Tag Name or ID
+* Easy Export and Import Interface
+
+Learn More about the Pro version at [Themology.net](http://http://themology.net/shop/smart-woocommerce-product-export-import-plugin// "WC Smart Export Import Plugin")
 
 == Installation ==
 
