@@ -27,7 +27,8 @@ This plugin takes advantage of the new "Date Query" introduced with WordPress ve
 * and more.
 
 
-= Get the Pro Version =
+= [Get the Pro Version](http://themology.net/shop/smart-woocommerce-product-export-import-plugin// "WC Smart Export Import Plugin") =
+
 
 By using our Pro version, You can also import WooCommerce products from any CSV file. It supports importing hundreds or thousands of products at once. It uses ajax function for import. You can imports images via URL or local file path and imports hierarchical category structures.
 
@@ -47,7 +48,7 @@ By using our Pro version, You can also import WooCommerce products from any CSV 
 * Add Categories and Tags to Products by Category/Tag Name or ID
 * Easy Export and Import Interface
 
-Learn More about the Pro version at [Themology.net](http://http://themology.net/shop/smart-woocommerce-product-export-import-plugin// "WC Smart Export Import Plugin")
+Learn More about the Pro version at [Themology.net](http://themology.net/shop/smart-woocommerce-product-export-import-plugin// "WC Smart Export Import Plugin")
 
 == Installation ==
 
