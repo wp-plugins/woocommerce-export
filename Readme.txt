@@ -191,6 +191,16 @@ You can rename the columns using a filter (small piece of code to put into your 
 
 == Changelog ==
 
+= 1.1.1 =
+
+* Memory improvement at loading
+* Added ajax export (pro)
+* Added Import features (pro)
+* Import Product Image by URL (pro)
+* Export Product with All Meta (pro)
+* Export All Product OR from Desired Category (pro)
+
+
 = 1.1.0 =
 
 * Show order item meta in the help tab

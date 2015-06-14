@@ -4,7 +4,7 @@
  * Plugin Name: WooCommerce Smart Export
  * Pugin URI:	https://wordpress.org/plugins/woocommerce-export/
  * Description: Adds new tabs in your WooCommerce reports option page to export all your customers, orders and coupon usage in a CSV file ; and to schedule the imports.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Themology
  * Author URI: http://www.themology.net
  * License: GPL V2.0
